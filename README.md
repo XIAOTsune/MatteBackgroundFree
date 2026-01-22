@@ -71,21 +71,46 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 快速开始 (Quick Start)
+## 🚀 快速开始 (无脑运行指南)
 
-### 方式一：源码运行 (推荐)
-在命令行中运行以下命令启动 Web UI：
+### 方法一：Windows 一键脚本 (推荐小白使用) ✅
 
-```bash
-python app_gradio_new.py
-```
+我们在项目根目录提供了自动化的脚本，只需两步即可运行。
 
-启动成功后，控制台会显示访问地址（通常是 `http://127.0.0.1:7860`），在浏览器打开即可使用。
+**第一步：检查/安装 Python**
+您的电脑需要安装 Python 3.10 或更高版本。
+- 打开命令提示符输入 `python --version` 检查。
+- 如果没有，请去 [Python 官网](https://www.python.org/downloads/) 下载安装（**注意：安装时务必勾选 "Add Python to PATH"**）。
 
-### 方式二：Windows 可执行程序
-如果你下载的是打包好的 Release 版本，直接运行根目录下的：
-- `小T的抠图工具箱.exe`
-- 或者运行 `启动脚本.bat`
+**第二步：一键运行**
+1. 双击运行 **`一键安装环境.bat`** (或者 `install.bat`)。
+   - 它会自动创建环境并配置国内镜像源加速下载依赖。
+   - 等待出现 "安装完成" 提示。
+   
+2. 双击运行 **`一键启动程序.bat`** (或者 `run.bat`)。
+   - 稍等片刻，浏览器会自动弹出一个网页，即可开始抠图！
+
+---
+
+### 方法二：极客/开发者模式 (命令行)
+
+如果您熟悉命令行，或者使用 Linux/Mac 系统，请使用标准方式：
+
+1. **创建环境 (建议)**
+   ```bash
+   conda create -n matting python=3.10
+   conda activate matting
+   ```
+
+2. **安装依赖**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **启动程序**
+   ```bash
+   python app_gradio_new.py
+   ```
 
 ---
 
