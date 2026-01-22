@@ -1,0 +1,29 @@
+=== Application Startup: E:\BirefNet_v4.3 ===
+2026-01-22 15:34:27,778 - INFO - Starting 小T的抠图工具箱...
+2026-01-22 15:34:27,778 - INFO - Network Config: Proxy=None
+2026-01-22 15:34:27,778 - INFO - Network Config: NO_PROXY=localhost,127.0.0.1,::1,0.0.0.0
+2026-01-22 15:34:29,821 - INFO - Selected port: 7860
+2026-01-22 15:34:29,998 - INFO - 尝试启动Gradio服务器 (尝试 1/3)...
+* Running on local URL:  http://127.0.0.1:7860
+2026-01-22 15:34:30,296 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-01-22 15:34:30,321 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+
+To create a public link, set `share=True` in `launch()`.
+2026-01-22 15:34:30,708 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-01-22 15:34:31,325 - INFO - Opening browser at http://127.0.0.1:7860
+2026-01-22 15:34:31,326 - INFO - Using Edge App Mode: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+2026-01-22 15:34:33,653 - INFO - 浏览器进程监控已启动 (启动前有 24 个浏览器进程)
+2026-01-22 15:34:36,465 - WARNING - 未检测到新的浏览器进程，监控功能使用全部浏览器进程
+2026-01-22 15:34:36,466 - INFO - 监控 24 个浏览器进程: {2560, 5252, 23688, 9740, 8084, 24100, 3624, 4140, 3248, 19508, 22968, 19516, 8128, 3652, 15812, 20168, 8404, 23008, 18664, 21224, 19564, 2160, 24176, 2044}
+2026-01-22 15:35:13,721 - INFO - 开始处理图片
+📦 检测到本地模型：E:\BirefNet_v4.3\models_local\BiRefNet
+📂 正在从本地加载模型：E:\BirefNet_v4.3\models_local\BiRefNet
+⚡ 已启用 FP16 半精度推理
+✅ 模型加载完成：General，输入尺寸 (1024, 1024)
+2026-01-22 15:35:16,312 - INFO - 图片处理完成
+2026-01-22 15:35:16,733 - INFO - 🖼️ 单张结果已自动保存：E:\BirefNet_v4.3\preds-BiRefNet\single_20260122_153516.png
+2026-01-22 15:35:27,517 - INFO - 正在关闭Gradio服务器...
+Closing server running on port: 7860
+2026-01-22 15:35:27,721 - INFO - Gradio服务器已关闭
+清理 1 个子进程...
+2026-01-22 15:35:27,734 - INFO - 程序已安全退出
